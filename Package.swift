@@ -2,7 +2,6 @@ import PackageDescription
 
 let package = Package(
     name: "Jay",
-    exclude: [],
     targets: [
         Target(
             name: "Jay"
@@ -13,7 +12,8 @@ let package = Package(
                 .Target(name: "Jay")
             ]
         )
-    ]
+    ],
+    exclude: []
 )
 
 //with the new swiftpm we have to force it to create a static lib so that we can use it
